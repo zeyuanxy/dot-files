@@ -6,6 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
+# ZSH_THEME="simple"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,3 +85,9 @@ export NODE_PATH=/usr/local/lib/node_modules
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+gitgo() {
+    git add --all
+    git commit -m $1
+    git push origin master
+}
