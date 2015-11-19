@@ -8,6 +8,8 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="agnoster"
 # ZSH_THEME="simple"
 
+DEFAULT_USER="zeyuanxy"
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -52,7 +54,11 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/texlive/2015/bin/x86_64-darwin"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/go/bin:$PATH"
+export GOPATH=$HOME/Coding/course-6.824-distributed-systems
+export PATH=$PATH:$GOPATH/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -80,14 +86,12 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/texbin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim="/usr/local/bin/vim"
-alias svn="/usr/local/bin/svn"
-export NODE_PATH=/usr/local/lib/node_modules
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+alias cbi='LC_CTYPE=en_US.UTF-8 cabal install --user --haddock-hyperlink-source'
 
 gitgo() {
     git add --all
     git commit -m $1
     git push origin master
 }
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
