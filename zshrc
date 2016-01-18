@@ -54,11 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/texlive/2015/bin/x86_64-darwin"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
-export GOPATH=$HOME/Coding/course-6.824-distributed-systems
-export PATH=$PATH:$GOPATH/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
