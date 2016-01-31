@@ -83,10 +83,4 @@ source $ZSH/oh-my-zsh.sh
 alias vim="/usr/local/bin/vim"
 alias cbi='LC_CTYPE=en_US.UTF-8 cabal install --user --haddock-hyperlink-source'
 
-gitgo() {
-    git add --all
-    git commit -m $1
-    git push origin master
-}
-
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
